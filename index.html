@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PORTFOLIO</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="shortcut icon" type="image/x-icon" href="live_demo/Images/favicon.png">
+</head>
+<body>
+ <div class="box">
+    <button id="mode-toggle">Loading...</button>
+ </div>
+ 
+     <!-- Navbar -->
+    <nav class="navbar">
+  <div class="logo">
+    <img src="live_demo/Images/logo.png" alt="MyLogo">
+  </div>
+  
+  <input type="checkbox" id="menu-toggle">
+  <label for="menu-toggle" class="menu-icon">&#9776;</label>
+  
+  <ul class="nav-links">
+    <li style="--i:1"><a href="#home">HOME</a></li>
+    <li style="--i:2"><a href="#about">ABOUT</a></li>
+    <li style="--i:3"><a href="#skills">SKILLS</a></li>
+    <li style="--i:4"><a href="#projects">PROJECTS</a></li>
+    <li style="--i:5"><a href="#experience">EXPERIENCE</a></li>
+  </ul>
+</nav>
+  
+      <!-- Home Section -->
+  <section id="home" class="home-section">
+    <div class="container">
+      <h1 class="hero-title">Hi, I'm <span>SUHAIL</span></h1>
+      <p class="hero-subtitle">Frontend Developer | Designer | Coder</p>
+      <a href="#contact" id="btn">Contact Me</a>
+    </div>
+  </section>
+  
+      <!-- About Section -->
+  <section id="about" class="about">
+    <div class="about-wrapper">
+      <div class="about-image">
+        <img src="live_demo/Images/suhail.png" alt="Profile Picture" />
+      </div>
+      <div class="about-content">
+        <h2>About Me</h2>
+        <p>
+          Hi! I am <b>MOHAMMED SUHAIL</b>. I am studying in K.M.HSS School at kuttoor north. I reach STEYP through the Tech@SCHOOL programme.When I Learned about coding I felt interested in it. Now I am studying frontend developing. I like a creating beautiful websites. I am to build clean, responsive website.
+        </p>
+        <p>
+          I love solving real-world problems through code and continuously learning new tools and technologies to level up my skills.
+        </p>
+      </div>
+    </div>
+  </section>
+  
+      <!-- Skills Section -->
+  <section id="skills" class="skills-section">
+    <div class="container">
+      <h2>MY SKILLS</h2>
+      <div class="skills-grid">
+        <div class="skill" id="a">
+          <p>HTML</p>
+          <div class="skill-bar"><div class="progress" style="width:90%"></div></div>
+        </div>
+        <div class="skill" id="b">
+          <p>CSS</p>
+          <div class="skill-bar"><div class="progress" style="width:85%"></div></div>
+        </div>
+        <div class="skill" id="c">
+          <p>JAVASCRIPT</p>
+          <div class="skill-bar"><div class="progress" style="width:70%"></div></div>
+        </div>
+        <div class="skill" id="d">
+          <p>BOOTSTRAP</p>
+          <div class="skill-bar"><div class="progress" style="width:80%"></div></div>
+           </div>
+              <div class="skill" id="e">
+          <p>JQUERY</p>
+          <div class="skill-bar"><div class="progress" style="width:75%"></div></div>
+           </div>
+            <div class="skill" id="f">
+          <p>SASS</p>
+          <div class="skill-bar"><div class="progress" style="width:85%"></div></div>
+        </div>
+        <div class="skill" id="g">
+          <p>GIT</p>
+          <div class="skill-bar"><div class="progress" style="width:76%"></div></div>
+      </div>
+              <div class="skill" id="h">
+          <p>REACT</p>
+          <div class="skill-bar"><div class="progress" style="width:85%"></div></div>
+           </div>
+    </div>
+  </div>
+  </section>
+  
+      <!-- Experience Section -->
+  <section id="experience">
+  <h2 class="experience-title">My Experience</h2>
+
+  <div class="experience-container">
+   <p>
+      I am currently a student of the <strong>Steyp Tech Schooling Program</strong>, which offers a structured and interactive path into the world of software and web development. The curriculum includes hands-on projects, coding challenges, and recorded lessons covering a wide range of technologies including HTML, CSS, JavaScript, Python, and more.
+    </p>
+
+    <p>
+      Steyp has helped me build a strong foundation in coding while also staying updated with the latest tech trends. Through this program, I’ve developed real-world projects, improved my problem-solving skills, and gained confidence as a future developer.
+    </p>
+
+    <p>
+      I'm proud to be part of the <strong>Steyp Tech Schooling Program</strong>. It has provided me with a well-rounded introduction to software development and web technologies. From recorded classes to hands-on coding tasks, every step has strengthened my passion for technology.
+    </p>
+
+    <p>
+      I truly appreciate the guidance and learning platform that Steyp has built. Their dedication to student success is unmatched, and I am grateful for the opportunity to grow through their Tech Schooling Program.
+    </p>
+  </div>
+
+</section>
+
+      <!-- Projects Section -->
+  <section id="projects" class="projects-section">
+  <h2 class="projects-title">MY PROJECTS</h2>
+  <div class="project-filter">
+    <button id="button" data-filter="all">All <span></span></button>
+    <button id="button" data-filter="html">HTML/CSS <span></span></button>
+    <button id="button" data-filter="javascript">JAVASCRIPT <span></span></button>
+  </div>
+ <div class="projects-grid">
+   <div class="project-card" id="a" data-category="html">
+      <div class="preview-trigger">
+        <img src="live_demo/Images/animation.png" alt="animation" />
+      </div>
+      <h3>Animation</h3>
+      <p>This project make in HTML and CSS.</p>
+      <div class="card-buttons">
+        <a href="live_demo/projects/Animation.html">Live Demo</a>
+        <a href="https://github.com/Msuhail786/Animation.git">Code</a>
+      </div>
+    </div>
+    
+    <div class="project-card" id="b" data-category="javascript">
+      <div class="preview-trigger">
+        <img src="live_demo/Images/login.jpg" alt="Form Validator" />
+      </div>
+      <h3>Login Form</h3>
+      <p>we made with HTML, CSS and JAVASCRIPT.</p>
+      <div class="card-buttons">
+        <a href="/live_demo/projects/login_page.html">Live Demo</a>
+        <a href="https://github.com/Msuhail786/Login_form.git">Code</a>
+      </div>
+    </div>
+
+   <div class="project-card" id="c" data-category="html">
+      <div class="preview-trigger">
+        <img src="live_demo/Images/hover.png" alt="hover" />
+      </div>
+      <h3>Hover Button Gallery</h3>
+      <p>Hover button using only HTML and CSS.</p>
+      <div class="card-buttons">
+        <a href="live_demo/projects/hover_button.html">Live Demo</a>
+        <a href="https://github.com/Msuhail786/Hover_button.git">Code</a>
+      </div>
+    </div>
+     <div class="project-card" id="d" data-category="javascript">
+     <div class="preview-trigger">
+       <img src="live_demo/Images/calculator.png" alt="Portfolio Site" />
+     </div>
+     <h3>Calculator</h3>
+     <p>Calculator using HTML and CSS and JAVASCRIPT</p>
+     <div class="card-buttons">
+       <a href="live_demo/projects/calculator.html">Live Demo</a>
+       <a href="https://github.com/Msuhail786/Animation_Calculator.git">Code</a>
+     </div>
+     </div>
+     
+     <div class="project-card" id="e" data-category="html">
+  <div class="preview-trigger">
+    <img src="live_demo/Images/Loading.png" alt="animation" />
+  </div>
+  <h3>Loading Animation</h3>
+  <p>This project make in HTML and CSS.</p>
+  <div class="card-buttons">
+    <a href="live_demo/projects/Loading.html">Live Demo</a>
+    <a href="https://github.com/Msuhail786/Loading_Animation.git">Code</a>
+     </div>
+    </div>
+    
+    
+    <div class="project-card" id="f" data-category="javascript">
+      <div class="preview-trigger">
+        <img src="live_demo/Images/memory.png" alt="animation" />
+      </div>
+      <h3>Memory Game</h3>
+      <p>This project make in HTMl and CSS and javascript.</p>
+      <div class="card-buttons">
+        <a href="live_demo/projects/momory.html">Live Demo</a>
+        <a href="https://github.com/Msuhail786/Memory_game.git">Code</a>
+      </div>
+    </div>
+   </div>
+   <div class="link">
+     <a class="more"href="http://localhost:7700/live_demo/projects.html">view more</a>
+   </div>
+</section>
+
+      <!-- Contact Section -->
+<section id="contact">
+  <div class="contact-form">
+    <h2>Contact Me</h2>
+    <div id="successMessage" class="alert">Thanks for your message</div>
+    <form onsubmit="sendToWhatsApp(); return false;">
+      <input type="text" id="name" placeholder="Your Name" required />
+      <textarea id="message" rows="4" placeholder="Your Message" required></textarea>
+      <button class="contact_btn" type="submit">Send</button>
+    </form>
+  </div>
+</section>
+  
+      <!-- Footer Section -->
+  <footer>
+    <p>&copy; <b>2025 MUHAMMED SUHAIL</b></p>
+    <div class="social-links">
+            <a href="#">LinkedIn</a> |
+            <a href="https://github.com/Msuhail786">GitHub</a> |
+            <a href="https://www.instagram.com/su_ha_il.m786?igsh=MzdqdXIzdTRzeXE4">Instagram</a>
+        </div>
+  </footer>
+  
+  <script src="js/script.js"></script>
+</body>
+</html>
